@@ -17,6 +17,8 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 1.6rem;
     line-height: 2;
+    color: #040F16;
+    background-color: #6F7D9B;
 }
 
 /* Globales */
@@ -64,7 +66,7 @@ img {
 }
 
 .nombre-sitio span {
-    color: #037bc0;
+    color: #B80C09 ;
 
 }
 
@@ -82,8 +84,9 @@ img {
 }
 
 .nav-principal a:hover {
-    background-color: #037bc0;
+    background-color: #B80C09 ;
     color: #fff;
+    height: 3rem;
 
 }
 
@@ -91,10 +94,9 @@ img {
     background-image: url(../img/principal.jpg);
     height: 55rem;
     background-repeat: no-repeat;
-    background-position: 1px 1px;
+    background-position: 1px -250px;
     background-size: cover;
-    background-position: 1px 7px;
-}
+    }
 
 
 
@@ -111,6 +113,11 @@ img {
     gap: 2rem;
     
 }
+.size-img{
+    object-fit: cover;
+    height: 22rem;
+    width: 45rem;
+  }
 
 .categorias h2 {
     text-align: center;
@@ -126,7 +133,7 @@ img {
 }
 
 .categoria a:hover {
-    background-color: #037bc0;
+    background-color: #B80C09;
     color: #fff;
     border-bottom-right-radius: 3rem;
 }
