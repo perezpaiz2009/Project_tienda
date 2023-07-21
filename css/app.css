@@ -148,6 +148,22 @@ img {
 
 .sobre-nosotros{
 
-    background-image: linear-gradient(to right,#000 50%,#ff0000 51%, #ff0000 100%);
+    background-image: linear-gradient(to right, transparent 50%,#ff0000 50%,#ff0000 100%),url('../img/nosotros.jpg');
+    padding: 10rem 0;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 100%, 120rem;
+    margin-top: 4rem;
+}
+
+.sobre-nosotros-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 4rem;
+    color: #fff;
+    }
+
+.texto-nosotros{
+    grid-column: 2/3;
 }
 
