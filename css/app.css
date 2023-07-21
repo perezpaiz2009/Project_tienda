@@ -18,7 +18,7 @@ body {
     font-size: 1.6rem;
     line-height: 2;
     color: #040F16;
-    background-color: #6F7D9B;
+    background-color: #F4F4F4;
 }
 
 /* Globales */
@@ -66,12 +66,17 @@ img {
 }
 
 .nombre-sitio span {
-    color: #B80C09 ;
+    color: #ff0000 ;
 
+}
+.nav-principal a{
+    color:#fff ;
 }
 
 .contenedor-navegacion {
-    border-top: 0.1rem solid #e1e1e1;
+    border-top: 0.1rem solid #fff;
+    background-color: #ff0000;
+    
 
 }
 
@@ -84,9 +89,10 @@ img {
 }
 
 .nav-principal a:hover {
-    background-color: #B80C09 ;
-    color: #fff;
-    height: 3rem;
+    background-color: #ecebd8 ;
+    color: #000;
+    height: fit-content;
+    width: fit-content;
 
 }
 
@@ -129,14 +135,19 @@ img {
     text-align: center;
     display: block;
     padding: 2rem;
-    font-size: 2rem;
+    font-size: 2rem;    
 }
 
 .categoria a:hover {
-    background-color: #B80C09;
+    background-color: #ff0000;
     color: #fff;
-    border-bottom-right-radius: 3rem;
+    border-bottom-right-radius: 2rem;
 }
 
 /*Bloque nosotros */
+
+.sobre-nosotros{
+
+    background-image: linear-gradient(to right,#000 50%,#ff0000 51%, #ff0000 100%);
+}
 
