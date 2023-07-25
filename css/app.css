@@ -238,7 +238,8 @@ img {
     border-left: solid 1px #141414;
     padding-left: 2rem;
 }
-#whatsicon{
-   font-size: 5rem;
+.whats{
+   height: 7rem;
+   width: 6rem;
    
 }
