@@ -260,7 +260,7 @@ img {
     ),
     url("../img/Simcard.jpg");
   padding: 10rem 0;
-  background-position: left right;
+  background-position: left center;
   background-repeat: no-repeat;
   background-size: 100%, 120rem;
   margin-top: 4rem;
