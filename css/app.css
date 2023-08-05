@@ -229,9 +229,16 @@ img {
 .inter-menu a {
   display: block;
 }
+.site-inter h2{
+ text-align: center;
+}
 
 .site-inter h3 {
   margin-bottom: 0.5rem;
+  
+}
+.site-inter{
+  margin-bottom: 5rem;
 }
 
 #inter3{
@@ -242,4 +249,19 @@ img {
    height: 7rem;
    width: 6rem;
    
+}
+/*Producto pospago*/
+.producto-pospago {
+  background-image: linear-gradient(
+      to right,
+      transparent 50%,
+      #fff 50%,
+      #fff 100%
+    ),
+    url("../img/Simcard.jpg");
+  padding: 10rem 0;
+  background-position: left right;
+  background-repeat: no-repeat;
+  background-size: 100%, 120rem;
+  margin-top: 4rem;
 }
