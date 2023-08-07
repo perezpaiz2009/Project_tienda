@@ -66,17 +66,9 @@ img {
   color: #fff;
 }
 
-.contenedor-navegacion {
-  border-top: 0.1rem solid #fff;
-  background-color: #ff0000;
-}
 
-.nav-principal {
-  display: flex;
-  padding: 2rem 0;
-  justify-content: space-around;
-  font-weight: bold;
-}
+
+
 
 .nav-principal a:hover {
   color: #000;
@@ -396,9 +388,62 @@ button:hover span{
   animation-play-state: paused;
 }
 
-/*formuario */
+/*formulario */
 
 .colorform{
   background-color: rgb(193, 179, 179);
+}
+/*menu hamburguesa */
+.logo{
+  max-width: 12rem;
+}
+
+.nav-principal{
+  display: flex;
+  gap: 3rem;
+  border: none;
+  font-weight: bold;
+}
+
+.section-menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #ff0000;
+}
+
+.abrir-menu{
+  display: none;
+}
+
+@media screen and (max-width: 550px) {
+ /* .abrir-menu{
+    display: block;
+    
+  }
+  .nav-principal{
+    display: none;
+  } */
+
+  
+  .contenedor-navegacion{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1c1c1c;
+    padding: 4rem;
+    box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
+
+     }
+
+  .nav-principal{
+    flex-direction: column;
+    align-items: end;
+  }
+  .hvr-radial-in:before{
+    background-color: #1c1c1c;
+  }
 }
 
