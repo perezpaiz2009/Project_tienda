@@ -40,31 +40,33 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function enviarEmail(e) {
         e.preventDefault();
-
+       
         spinner.classList.add('flex');
         spinner.classList.remove('hidden');
-
+       
         setTimeout(() => {
 
             spinner.classList.add('hidden');
             spinner.classList.remove('flex');
-            resetFormulario();
+            formulario.submit();
+            
 
             //Creando Alerta
             const alertaExito = document.createElement('P');
-            alertaExito.classList.add('bg-green-500', 'text-white', 'p-2', 'text-center', 'rounded-lg', 'mt-10', 'font-bold', 'text-sm',
-                'uppercase');
+            alertaExito.classList.add('bg-green-500', 'text-white', 'p-3', 'text-center', 'rounded-lg', 'mt-10', 'font-bold',
+                'uppercase','font-medium');
+                
             alertaExito.textContent = 'Mensaje enviado con exito';
-
+            
             formulario.appendChild(alertaExito);
-
+            
             setTimeout(() => {
-
+                resetFormulario();
                 alertaExito.remove();
             }, 3000);
         }, 3000);
 
-
+    
 
 
     }
