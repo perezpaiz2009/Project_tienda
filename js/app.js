@@ -164,3 +164,15 @@ btnabrircerrar.addEventListener("click", () => {
   else
   nav.classList.add("visible");
 });
+
+// ... Tu código JavaScript existente ...
+
+// Agrega esta parte para cerrar el menú cuando se hace clic en un enlace dentro del menú responsivo
+const enlacesMenu = document.querySelectorAll('.contenedor-navegacion a');
+
+enlacesMenu.forEach(enlace => {
+  enlace.addEventListener('click', () => {
+    nav.classList.remove('visible');
+    animateBars();
+  });
+});
