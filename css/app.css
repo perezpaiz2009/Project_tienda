@@ -458,7 +458,6 @@ button:hover span {
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
   }
 
- 
   .contenedor-navegacion.visible {
     opacity: 1;
     visibility: visible;
@@ -472,5 +471,33 @@ button:hover span {
     background-color: #1c1c1c;
   }
 
-  
+  /* haciendo responsiva los section*/
+  .listado-categorias {
+    display: flex;
+    flex-direction: column;
+  }
+  .categoria {
+    margin-left: 5rem;
+    padding:0;
+  }
+  .size-img {
+    object-fit: cover;
+    height: 25rem;
+    width: 45rem;
+  }
+  .categoria a:hover {
+    background-color: #ff0000;
+    color: #fff;
+    
+  }
+  .sobre-nosotros {
+    background-image:url("../img/nosotros.jpg");
+    padding: 10rem 0;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 100%, 120rem;
+    margin-top: 4rem;
+  }
+
+
 }
