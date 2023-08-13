@@ -111,9 +111,25 @@ img {
   border-bottom-right-radius: 2rem;
 }
 
+
 /*Bloque nosotros */
 
-.sobre-nosotros {
+ .sobre-nosotros {
+  background-image: linear-gradient(
+      to bottom,
+      transparent 50%,
+      #ff4400 50%,
+      #ff0000 100%
+    ),
+    url("../img/nosotros.jpg");
+    background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 100%, 75rem;
+  margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+  .sobre-nosotros {
   background-image: linear-gradient(
       to right,
       transparent 50%,
@@ -124,19 +140,39 @@ img {
   padding: 10rem 0;
   background-position: left center;
   background-repeat: no-repeat;
-  background-size: 100%, 120rem;
+  background-size: 100%, 160rem;
   margin-top: 4rem;
+}
 }
 
 .sobre-nosotros-grid {
-  display: flex;
-  justify-content: flex-end;
-  color: #fff;
+  display: grid;
+  grid-template-rows: repeat(2,1fr);
+  row-gap: 2rem;
+  
+}
+.texto-nosotros{
+  grid-row: 2/3;
+}
+@media (min-width: 768px) {
+  .sobre-nosotros-grid{
+    grid-template-columns: repeat(2,1fr);
+    padding-left: 2rem;
+    grid-template-rows: unset;
+  }
 }
 
 .texto-nosotros {
-  flex-basis: 50%;
-  padding-left: 10rem;
+  grid-column: 2/3;
+    color: #fff;
+}
+
+
+@media (min-width: 768px) {
+  .texto-nosotros {
+  grid-column: 2/3;
+  
+}
 }
 
 .texto-nosotros p {
@@ -437,6 +473,27 @@ button:hover span {
   transform: rotate(-45deg) translate(-4px, 2px);
 }
 
+@media screen and (min-width: 550px) {
+  .bars__menu {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .listado-categorias {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  .categorias {
+    padding-top: 0;
+  }
+  .hero {
+    background-position: 1px -50px;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .abrir-menu,
   .cerrar-menu {
@@ -472,13 +529,10 @@ button:hover span {
   }
 
   /* haciendo responsiva los section*/
-  .listado-categorias {
-    display: flex;
-    flex-direction: column;
-  }
+
   .categoria {
     margin-left: 5rem;
-    padding:0;
+    padding: 0;
   }
   .size-img {
     object-fit: cover;
@@ -488,16 +542,16 @@ button:hover span {
   .categoria a:hover {
     background-color: #ff0000;
     color: #fff;
-    
   }
   .sobre-nosotros {
-    background-image:url("../img/nosotros.jpg");
-    padding: 10rem 0;
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: 100%, 120rem;
-    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
   }
-
+  .size-img {
+    object-fit: cover;
+    height: 15rem;
+    width: 30rem;
+  }
+ 
 
 }
