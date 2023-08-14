@@ -111,10 +111,9 @@ img {
   border-bottom-right-radius: 2rem;
 }
 
-
 /*Bloque nosotros */
 
- .sobre-nosotros {
+.sobre-nosotros {
   background-image: linear-gradient(
       to bottom,
       transparent 50%,
@@ -122,7 +121,7 @@ img {
       #ff0000 100%
     ),
     url("../img/nosotros.jpg");
-    background-position: left center;
+  background-position: left center;
   background-repeat: no-repeat;
   background-size: 100%, 75rem;
   margin-top: 4rem;
@@ -130,49 +129,50 @@ img {
 
 @media (min-width: 768px) {
   .sobre-nosotros {
-  background-image: linear-gradient(
-      to right,
-      transparent 50%,
-      #ff4400 50%,
-      #ff0000 100%
-    ),
-    url("../img/nosotros.jpg");
-  padding: 10rem 0;
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: 100%, 160rem;
-  margin-top: 4rem;
-}
+    background-image: linear-gradient(
+        to right,
+        transparent 50%,
+        #ff4400 50%,
+        #ff0000 100%
+      ),
+      url("../img/nosotros.jpg");
+    padding: 10rem 0;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 100%, 160rem;
+    margin-left: 7rem;
+  }
 }
 
 .sobre-nosotros-grid {
   display: grid;
-  grid-template-rows: repeat(2,1fr);
+  grid-template-rows: repeat(2, 1fr);
   row-gap: 2rem;
+ 
+}
+.texto-nosotros {
+  grid-row: 2/3;
+ text-align: center;
+ font-weight: bold;
   
 }
-.texto-nosotros{
-  grid-row: 2/3;
-}
 @media (min-width: 768px) {
-  .sobre-nosotros-grid{
-    grid-template-columns: repeat(2,1fr);
-    padding-left: 2rem;
+  .sobre-nosotros-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 40rem;
     grid-template-rows: unset;
   }
 }
 
 .texto-nosotros {
   grid-column: 2/3;
-    color: #fff;
+  color: #fff;
 }
-
 
 @media (min-width: 768px) {
   .texto-nosotros {
-  grid-column: 2/3;
-  
-}
+    grid-column: 2/3;
+  }
 }
 
 .texto-nosotros p {
@@ -187,8 +187,8 @@ img {
   background-image: linear-gradient(
       to right,
       transparent 50%,
-      #fff 50%,
-      #fff 100%
+      #878585 50%,
+      #b9b4b4 100%
     ),
     url("../img/interwifi.jpg");
   padding: 10rem 0;
@@ -210,19 +210,36 @@ img {
 /*  productosimcard */
 
 /*producto inter*/
+
 .producto-simcard {
   background-image: linear-gradient(
-      to right,
+      to bottom,
       transparent 50%,
-      #fff 50%,
-      #fff 100%
+      #878585 50%,
+      #b9b4b4 100%
     ),
-    url("../img/simcard2.jpg");
-  padding: 10rem 0;
+    url("../img/img_webp/simcard2.webp");
   background-position: left center;
   background-repeat: no-repeat;
-  background-size: 100%, 120rem;
+  background-size: 100%, 50rem;
   margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+  .producto-simcard {
+    background-image: linear-gradient(
+        to right,
+        transparent 50%,
+        #878585 50%,
+        #b9b4b4 100%
+      ),
+      url("../img/simcard2.jpg");
+    padding: 10rem 0;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 100%, 120rem;
+    margin-top: 4rem;
+  }
 }
 
 /* footer*/
@@ -292,17 +309,32 @@ img {
 /*Producto pospago*/
 .producto-pospago {
   background-image: linear-gradient(
-      to right,
+      to bottom,
       transparent 50%,
-      #fff 50%,
-      #fff 100%
+      #878585 50%,
+      #b9b4b4 100%
     ),
-    url("../img/Simcard.jpg");
-  padding: 10rem 0;
+    url("../img/img_webp/Simcard.webp");
   background-position: left center;
   background-repeat: no-repeat;
-  background-size: 100%, 120rem;
+  background-size: 100%, 75rem;
   margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+  .producto-pospago {
+    background-image: linear-gradient(
+        to right,
+        transparent 50%,
+        #878585 50%,
+        #b9b4b4 100%
+      ),
+      url("../img/Simcard.jpg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 100%, 120rem;
+    margin-top: 4rem;
+  }
 }
 
 /*Boton de whatsapp*/
@@ -429,9 +461,15 @@ button:hover span {
 
 .nav-principal {
   display: flex;
-  gap: 3rem;
+  gap: 10rem;
   border: none;
   font-weight: bold;
+  font-size: large;
+}
+@media (max-width: 550px) {
+  .nav-principal {
+    gap: 5rem;
+  }
 }
 
 .section-menu {
@@ -529,13 +567,13 @@ button:hover span {
   }
 
   /* haciendo responsiva los section*/
-@media (min-width: 768px) {
-  .categoria {
-    margin-left: 5rem;
-    padding: 0;
+  @media (min-width: 768px) {
+    .categoria {
+      margin-left: 5rem;
+      padding: 0;
+    }
   }
-}
-  
+
   .size-img {
     object-fit: cover;
     height: 25rem;
@@ -554,6 +592,4 @@ button:hover span {
     height: 15rem;
     width: 30rem;
   }
- 
-
 }
