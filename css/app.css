@@ -529,11 +529,13 @@ button:hover span {
   }
 
   /* haciendo responsiva los section*/
-
+@media (min-width: 768px) {
   .categoria {
     margin-left: 5rem;
     padding: 0;
   }
+}
+  
   .size-img {
     object-fit: cover;
     height: 25rem;
